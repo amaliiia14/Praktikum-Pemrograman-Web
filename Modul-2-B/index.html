@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List <img src="img/todo.png" alt="todolist"></h1>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add your task...">
+            <button id="addButton" onclick="addTask()">Add</button>
+        </div>
+        <div class="task" id="taskTemplate" style="display: none;">
+            <div class="inputtask">
+                <input type="text" class="editInput" placeholder="Edit task here...">
+            </div>
+            <div class="item-btn">
+                <i class="fa fa-trash-can delete-btn" style="color: #bf3138;"></i>
+                <i class="fa fa-pen-to-square edit-btn" style="color: #29ac20;"></i>
+            </div>
+        </div>
+        <div id="taskList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
